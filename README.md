@@ -4,23 +4,27 @@ A popular pure CSS text portrait for your loved ones.
 
 ## Features
 
-- Uses only **HTML & CSS** (No JavaScript required)
-- Background image fills the text using `background-clip`
-- Fully **responsive** and scalable
-- Easy to customize with different text and images
+- Pure CSS solution, no libraries required.
+- Background image clipped to the text.
+- Fully responsive.
 
 ## How to Use
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/css-text-portrait-builder.git
+   git clone https://github.com/yourusername/css-text-portrait.git
    ```
 2. Open index.html in your browser.
-3. Edit the .portrait div content and update the background image URL.
+3. Replace the background image URL and text with your own.
+4. The text will automatically fill the screen with the background image clipped inside it.
 
 ## Live Demo
 
 Check out the live demo here.
+
+## Contributions
+
+Feel free to fork this repository and make improvements. If you encounter any issues or have suggestions, please open an issue or submit a pull request.
 
 ## License
 
