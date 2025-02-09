@@ -6,39 +6,45 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
-    <title>CSS Text Portrait</title>
     <meta
       name="description"
       content="A popular pure CSS text portrait for your loved ones."
     />
-  </head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <meta name="author" content="Your Name" />
+    <title>CSS Text Portrait</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-    .portrait-text {
-      font-size: 8px;
-      line-height: 8px;
-      text-align: justify;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-      background: url("https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D")
-        no-repeat center/cover;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: rgba(255, 255, 255, 0);
-      filter: grayscale(100%);
-    }
-  </style>
+      .portrait-text {
+        font-size: 1.2vw; /* Scales with screen size */
+        line-height: 1.2vw;
+        text-align: justify;
+        font-family: "Times New Roman", "Inter", "Montserrat", "Poppins",
+          sans-serif;
+        width: 90vw;
+        height: 90vh;
+        overflow: hidden;
+        background: url("https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D")
+          no-repeat center/cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        filter: grayscale(100%);
+      }
+
+      .portrait-text::before {
+        content: attr(data-text);
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
   <body>
     <div class="portrait-text" id="portraitText"></div>
 
